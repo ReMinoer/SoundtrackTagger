@@ -1,0 +1,28 @@
+version: '{build}'
+image: Visual Studio 2017
+
+before_build:
+  - nuget restore
+after_build:
+  - 7z a SoundtrackTagger.zip %APPVEYOR_BUILD_FOLDER%\SoundtrackTagger\bin\Release\*
+  
+configuration: Release
+
+build:
+  verbosity: minimal
+  
+artifacts:
+  - path: SoundtrackTagger.zip
+
+deploy:
+  - provider: GitHub
+    artifact: SoundtrackTagger.zip
+    release: ${appveyor_repo_tag_name}
+    description: 'Version ${appveyor_repo_tag_name}'
+    force_update: true
+    auth_token:
+      secure: NFu7VATIRtpS96dnh27gq3AgyBTDfD/RvLNcdgG5N0HKXYUjHZoEIMoMaFjMD6Za
+    on:
+      branch: master
+      configuration: Release
+      appveyor_repo_tag: true

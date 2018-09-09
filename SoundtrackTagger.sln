@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundtrackTagger", "SoundtrackTagger\SoundtrackTagger.csproj", "{359DC57A-2DB2-4F27-86F4-4FFA9F76BEEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{359DC57A-2DB2-4F27-86F4-4FFA9F76BEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359DC57A-2DB2-4F27-86F4-4FFA9F76BEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359DC57A-2DB2-4F27-86F4-4FFA9F76BEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359DC57A-2DB2-4F27-86F4-4FFA9F76BEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB2F5A7D-2E6C-4E1F-B26D-0888AD8FADE2}
+	EndGlobalSection
+EndGlobal
