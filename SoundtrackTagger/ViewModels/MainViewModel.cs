@@ -151,7 +151,7 @@ namespace SoundtrackTagger.ViewModels
                 if (coverFilePath == null)
                     return Task.FromResult(false);
 
-                audioFile.Tag.Pictures = new IPicture[] { new Picture(new ByteVector(File.ReadAllBytes(coverFilePath))) };
+                audioFile.Tag.Pictures = new IPicture[] { new TagLib.Picture(new ByteVector(File.ReadAllBytes(coverFilePath))) };
                 audioFile.Save();
                 audioFile.Dispose();
                 return Task.FromResult(true);
